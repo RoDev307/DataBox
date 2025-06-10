@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            <a class="nav-link active" href="sobrenosotros.html">Sobre nosotros</a>
+            <a class="nav-link active" href="sobrenosotros.html">¡Conózcanos!</a>
             <a class="nav-link active" href="servicios.html">Servicios</a>
             <a class="nav-link active" href="contacto.html">Contactanos</a>
             <a class="nav-link active" href="subscribete.html">Suscripción</a>
@@ -47,37 +47,13 @@
     </nav>
   </header>
   <!-------------FIN DEL NAV-------------->
-
-  <!-------------CUERPO DE LA PAGINA-------------->
-  <div class="container mt-4" style="padding-top:8% ;">
-    <div class="row">
-      <div class="col-12" style="text-align: center;">
-        <h1>DATABOX</h1>
-      </div>
-      <div class="row">
-        <div class="col-md-8" style="text-align: justify;">
-          <h2>Texto1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias provident, sunt dignissimos neque accusantium alias illo dolor reprehenderit temporibus illum, exercitationem officiis? Eaque quae ipsam ut cumque tempora ea libero?
-          </p>
-        </div>
-        <div class="col-md-4" style="text-align: justify;">
-          <h2>Texto2</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, consequuntur. Quam natus cupiditate quasi amet incidunt iste nobis adipisci, cum sequi nihil minima molestiae est? Voluptatem dolore ab libero deleniti!
-          </p>
-        </div>  
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <h1 style="text-align: center;">TEXTO3</h1>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-------------FIN CUERPO DE LA PAGINA-------------->
+  <div class="container" style="margin-top: 160px;">
+    <h1 class="text-center">Cotiza en DataBox</h1>
+  <p class="text-center fs-5">Recibe las últimas noticias y actualizaciones directamente en tu correo electrónico.</p>
+</div>
 
   <!-------------CARRUSEL-------------->
+  
 
   <div class="container" style="margin-top: 2%; margin-bottom:2%;"> <!--Contenedor del carrusel-->
     <div class="row"> 
@@ -110,6 +86,51 @@
     </div>
 </div>
 <!-------------CARRUSEL-------------->
+
+  <!-------------SUSCRIPCION-------------->
+<div class="container" style="margin-top: 100px;"></div>
+    <div class="row justify-content-left">
+       <div class="col-md-1"></div>
+    <div class="col-md-3">
+    <form>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="usuario@dominio.com" required> 
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono" required>
+      </div>
+      <div class="mb-3">
+        <label for="preferences" class="form-label">Tipos de planes</label>
+        <select class="form-select" id="preferences" required>
+          <option value="" disabled selected>Selecciona tus preferencias</option>
+          <option value="news">Emprendedores</option>
+          <option value="updates">Microempresarios</option>
+          <option value="offers">Empresarios</option>
+        </select>
+      </div>
+      <div class="container mb-4">
+        <a href="https://www.canva.com/design/DAGir1y9etY/HfSM4UuRE1V5U4oA7HwdMg/view?utm_content=DAGir1y9etY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4d52c367b2" target="_blank" class="btn btn-outline-secondary">
+          Ver opciones de paquetes
+        </a>
+      </div>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="terms" required>
+        <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+      </div>
+      <div class="container" style=" margin-bottom: 80px;">
+      <button type="submit" class="btn btn-primary">¡Cotiza ya!</button>
+      </div>
+    </div>
+    </form>
+
+  <!-------------FIN DE SUSCRIPCION-------------->
 
 
   <!-------------PIE DE PAGINA-------------->
