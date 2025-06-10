@@ -1,0 +1,8 @@
+ body {
+        background-image: url(crossword.png);
+        background-position: center; /* posisio de la imagen */
+        background-size: cover;  /* para controlar el tamaño */
+        background-repeat: no-repeat; /* no repeticion */
+    }
+
+   
