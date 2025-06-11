@@ -1,23 +1,24 @@
 
  <style>
  .image-gallery {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
+        display: flex; /* convierte el contenedor de las imagenes en un contededor flexible */
+        justify-content: center; /* centra las imagenes horizontalemente dentro del contenedor */
+        gap: 20px; /* agrega un espacio de 20 px entre cada imagen */
+        gap: 20px; /* agrega un espacio de 20 px entre cada imagen */
+        flex-wrap: wrap; /* propiedad para que las imagenes dentro del contenedor flexible se coloquen en una sola linea */
     }
 
-    .image-gallery img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 50%;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
+    .image-gallery img { 
+        width: 150px; /* ancho de cada imagen */
+        height: 150px; /* alto de cada imagen */
+        object-fit: cover; /* para que la imagen se adapte al contenedor */
+        border-radius: 50%; /* iamgenes circulares */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* efecto de sombra suave al pasar el cursor */
+        cursor: pointer; /* convierte el cursor a puntero para indicar que se puede dar clic a la imagen */
     }
 
-    .image-gallery img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    .image-gallery img:hover { /* el hover es el estilo que permitira que cambie la imagen al pasar el cursor */
+        transform: scale(1.1); /* aumenta imagen en un 10% al pasar el cursos */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* agrega sombra suave al pasar el cursor en la imagen */
     }
 <\style>

@@ -1,5 +1,5 @@
 
-@keyframes fadeInBanner {
+@keyframes fadeInBanner { /* define el efecto de opacidad de entrada y salida del banner */
   0% {
     opacity: 0;
     transform: translateY(-40px);
@@ -10,9 +10,9 @@
   }
 }
 
-.banner-animado {
+.banner-animado { /* efecto de transformacion suave */
   transition: transform 0.4s ease-in-out;
 }
-.banner-animado:hover {
+.banner-animado:hover { /* estilo para efecto cuabndo se pasa el cursor */
   transform: scale(1.02);
 }

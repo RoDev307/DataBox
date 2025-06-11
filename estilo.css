@@ -1,0 +1,89 @@
+/* Estilos para la sección de noticias */
+.news-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.news-card img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+.news-card .card-body {
+    padding: 15px;
+}
+.news-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.news-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+.news-date {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: right;
+    padding: 10px 15px 0 0;
+}
+.main-news-card {
+    background-color: #f8f9fa;
+}
+.small-news-card {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.small-news-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.small-news-content {
+    flex-grow: 1;
+}
+.small-news-content .card-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.small-news-content .card-text {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.read-more {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Nuevos estilos para la sección de Redes Sociales */
+.social-icon-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* Color del texto */
+    font-size: 1.1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.social-icon-link:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+.social-icon {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%; /* Para hacerlos redondos si tus imágenes son cuadradas */
+    object-fit: cover;
+}
