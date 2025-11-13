@@ -1,71 +1,56 @@
 /* General */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-  font-family: 'Segoe UI', sans-serif;
+body{
+  margin:0;
+  padding:0;
+  background:#f4f4f4;
+  font-family:'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+  color:#111;
 }
 
-/* Imagen */
-.perfil-foto {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+/* Foto: responsiva y uniforme */
+.perfil-foto{
+  width: clamp(220px, 40vw, 420px); /* se adapta al contenedor */
+  aspect-ratio: 1 / 1;              /* siempre cuadrada */
+  object-fit: cover;                 /* recorte uniforme */
+  object-position: 50% 35%;         /* sube un poco el rostro */
   border-radius: 50%;
   border: 5px solid #fff;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+  transition: transform .3s ease;
 }
+.perfil-foto:hover{ transform: scale(1.05); }
 
-.perfil-foto:hover {
-  transform: scale(1.05);
+/* Tipografía */
+.nombre-perfil{
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 700;
+  margin-bottom: .5rem;
 }
-
-/* Nombre grande */
-.nombre-perfil {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 15px;
-}
-
-/* Descripción */
-.perfil-descripcion {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 25px;
+.perfil-descripcion{
+  font-size: clamp(15px, 2.2vw, 18px);
+  color:#444;
+  line-height:1.5;
+  margin-bottom: 1.25rem;
 }
 
 /* Botones */
-.botones-circulares {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+.botones-circulares{
+  display:flex; flex-wrap:wrap; gap:12px;
 }
+.btn-circular{
+  padding:12px 20px;
+  border-radius:999px;
+  font-weight:700;
+  font-size:.95rem;
+  color:#fff; text-decoration:none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.btn-circular:hover{
+  transform: translateY(-1px) scale(1.02);
+  box-shadow:0 6px 18px rgba(0,0,0,.15);
+}
+.btn-amarillo{ background:#f9b233; }
+.btn-rojo{ background:#f44336; }
 
-.btn-circular {
-  padding: 12px 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.btn-circular:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.btn-amarillo {
-  background-color: #f9b233;
-}
-
-.btn-rojo {
-  background-color: #f44336;
-}
-
-.min-vh-100 {
-  min-height: 100vh;
-}
+/* Por si acaso no usas .min-vh-100 de Bootstrap */
+.min-vh-100{ min-height:100vh; }
